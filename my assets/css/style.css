@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.header{
+    height: auto;
+    background: #1f1d2c;
+    padding: 1rem;
+}
+
+.nav__container{
+    grid-column: 5/13;
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem;
+}
+
+li{
+    display: inline-block;
+}
+li a{
+    color: #ffff;
+    margin: .5rem;
+    text-decoration: none;
+}
+.li > a:hover {
+    color: #f1a600;
+}
+
+.title{
+    font-size: 90px;
+}
+
+.img-titulo{
+    grid-column: 8/13;
+}
+
+.img{
+    width: 70%;
+    padding: 1rem;
+}
+
+.textos-titulo{
+    grid-column: 1/6;
+    color: #ffff;
+    text-align: center;
+}
+
+.social-media{
+    height: auto;
+    grid-column: 1/6;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    size: 2rem;
+    width: 100%;
+}
+
+/* Acerca de mi */
+
+.about-me{
+    background: #242635;
+    color: #ffff;
+    height: auto;
+    text-align: center;
+    padding: 60px;
+}
+
+.textos-about-us{
+    grid-column: 1/-1;
+}
+
+.img-about{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.img-UVM{
+    width: 70%;
+    height: auto;
+}
+
+.img-A{
+    width: 50%;
+    height: auto;
+}
+
+/* Expericencia */
+
+.experience{
+    background: #1f1d2c;
+    color: #ffff;
+    height: auto;
+    text-align: center;
+    padding: 60px;
+}
+
+.textos-experience{
+    grid-column: 1/-1;
+    
+}
+
+.img-experience{
+    grid-column: 1/3;
+}
+
+.p-exp{
+    grid-column: 4/7;
+}
+
+.a-exp{
+    grid-column: 8/10;
+}
+.exp-text{
+    padding: 1rem;
+}
+.exp-tiempo{
+    padding: 2rem;
+}
+
+.linea{
+    grid-column: 11/13;
+}
+
+/* Mis Habilidades */
+
+.skills{
+    background: #242635;
+    color: #ffff;
+    height: auto;
+    text-align: center;
+    padding: 60px; 
+}
+
+.textos-skills{
+    grid-column: 1/-1; 
+}
+
+.porcentajes{
+    grid-column: 1/3;
+    font-size: 40px;
+    color: #f1a600;
+}
+
+.text-skills{
+    grid-column: 4/13;
+}
+.habilidades{
+    padding: 1rem;
+}
+
+
+/* Mi Portafolio */
+
+.portfolio{
+    background: #1f1d2c;
+    color: #ffff;
+    height: auto;
+    text-align: center;
+    padding: 60px; 
+}
+
+.textos-portfolio{
+    grid-column: 1/-1; 
+}
+
+.img-ecommerce{
+    grid-column: 1/6;
+}
+
+.img-app{
+    grid-column: 7/12;
+}
+
+.img-writer{
+    grid-column: 1/6;
+}
+
+.i-portfolio{
+    width: 90%;
+    height: auto;
+}
+
+/* Contacto */
+
+.contact{
+    background: #242635;
+    color: #ffff;
+    height: auto;
+    text-align: center;
+    padding: 60px; 
+}
+
+.textos-contact{
+    grid-column: 1/-1; 
+}
+
+.logo-phone{
+    grid-column: 2/6;
+}
+
+.logo-mail{
+    grid-column: 7/12;
+}
+.i-contact{
+    width: 50px;
+    height: auto;
+}
+
+/* Footer */
+
+footer{
+    background-color: #1f1d2c;
+    color: #ffff;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.textos-footer{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-footer{
+    width: 20%;
+    max-width: 100px;
+    padding: .5rem;
+}
+    
+/* .hero__title__container{
+    grid-column: 1/3;
+} */
+
+/* .hero{
+    background-image: url(/Vectores/Rectangle\ 34.svg);
+    display: grid;
+    justify-content: flex-end;
+    position: relative;
+} */
+
+/* 
+.container{
+    padding: 80px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.nav {
+    background-color: #1f1d2c;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    grid-template-columns: repeat(3,max-content);
+    justify-content: flex-end;
+}
+
+.hero__main{
+    height: 300px;
+}
+
+.hero__title{
+    font-size: 50px;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+li > a {
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color .3s linear; 
+}
+
+li > a:hover {
+    border-color: black;
+}
+
+img {
+    border-radius: 8px;
+  }
+
+#about p::first-letter{
+    color: goldenrod;
+    font-size: x-large;
+} */
+
